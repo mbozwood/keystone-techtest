@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// put all routes into the vue router
+Route::get('/{vue_route?}', function () {
+    return view('main');
+})->where('vue_route', '[\/\w\.-]*');
