@@ -15,7 +15,7 @@ To run this application locally, the repository should be cloned to an appropria
 `cp .env.example .env`  
 `php artisan key:generate`  
 
-At this point, you should configure your database environment variables in the .env files as necessary  
+At this point, you should configure your database, and other appropriate environment variables in the .env files as necessary  
 `php artisan migrate`  
 `php artisan app:get-pinboard-data`  
 
